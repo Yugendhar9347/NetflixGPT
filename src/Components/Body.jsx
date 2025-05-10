@@ -36,7 +36,7 @@ function Body() {
         createUserWithEmailAndPassword(auth, currentEmail, currentPassword)
           .then((userCredential) => {
             const user = userCredential.user;
-            console.log(user);
+            // console.log(user);
             // navigate("/browse");
 
           })
@@ -49,7 +49,7 @@ function Body() {
         signInWithEmailAndPassword(auth, currentEmail, currentPassword)
           .then((userCredential) => {
             const user = userCredential.user;
-            console.log(user);
+            // console.log(user);
             // navigate("/browse");
 
           })
