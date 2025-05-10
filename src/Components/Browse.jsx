@@ -32,7 +32,7 @@ function Browse() {
             onClick={handleSignOut}
             className="relative  bg-red-500 m-4 p-3 rounded-2xl"
           >
-            Sign Out
+            Sign Out 
           </button>
         </div>
       </div>
