@@ -5,6 +5,7 @@ import usegetMovieDetails from "../customHooks/usegetMovieDetails";
 import SecondaryContainer from "./SecondaryContainer";
 import MainContainer from "./MainContainer";
 import usePopularMovies from "../customHooks/usePopularMovies";
+import useTopRatedMovies from "../customHooks/useTopRatedMovies";
 
 function Browse() {
   const handleSignOut = () => {
@@ -21,6 +22,7 @@ function Browse() {
 
   usegetMovieDetails();
   usePopularMovies();
+  useTopRatedMovies();
   return (
     <div>
       <div className="flex justify-between ">
