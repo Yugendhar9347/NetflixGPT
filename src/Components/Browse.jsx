@@ -15,6 +15,7 @@ function Browse() {
       })
       .catch((error) => {
         // An error happened.
+        navigate("/error");
       });
   };
 
@@ -29,7 +30,7 @@ function Browse() {
         <div>
           <button
             onClick={handleSignOut}
-            className=" bg-red-500 m-4 p-3 rounded-2xl"
+            className="relative  bg-red-500 m-4 p-3 rounded-2xl"
           >
             Sign Out
           </button>
