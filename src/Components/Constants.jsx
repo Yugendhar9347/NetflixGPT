@@ -30,4 +30,4 @@ export const BG_URL =
   "https://assets.nflxext.com/ffe/siteui/vlv3/fc164b4b-f085-44ee-bb7f-ec7df8539eff/d23a1608-7d90-4da1-93d6-bae2fe60a69b/IN-en-20230814-popsignuptwoweeks-perspective_alpha_website_large.jpg";
 
 
-  export const OPENAI_KEY = "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";
+  export const OPENAI_KEY = import.meta.env.VITE_OPENAI_KEY;
