@@ -3,6 +3,7 @@ import useMovieTrailer from "../customHooks/useMovieTrailer";
 
 const VideoBackground = ({ movieId }) => {
   const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
+  const searchToggle = useSelector((store) => store.gptsearch.showgptSearch);
 
   useMovieTrailer(movieId);
 

@@ -1,12 +1,33 @@
-export const Background_Img = "https://assets.nflxext.com/ffe/siteui/vlv3/9390f6f6-cf80-4bc9-8981-8c2cc8adf98a/web/IN-en-20250421-TRIFECTA-perspective_dc5bcfdf-88a5-4972-8ffe-b28ff942f76e_large.jpg";
-export const Header_Logo = "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/consent/87b6a5c0-0104-4e96-a291-092c11350111/01938dc4-59b3-7bbc-b635-c4131030e85f/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png";
+export const Background_Img =
+  "https://assets.nflxext.com/ffe/siteui/vlv3/9390f6f6-cf80-4bc9-8981-8c2cc8adf98a/web/IN-en-20250421-TRIFECTA-perspective_dc5bcfdf-88a5-4972-8ffe-b28ff942f76e_large.jpg";
+export const Header_Logo =
+  "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/consent/87b6a5c0-0104-4e96-a291-092c11350111/01938dc4-59b3-7bbc-b635-c4131030e85f/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png";
 
 export const options = {
-    method: 'GET',
-    headers: {
-      accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTU1ZWU2YWI2YzFjOTE3NDUyM2U2NGUzOTNlOGI5NiIsIm5iZiI6MTc0NTkxODIzMi40NDQsInN1YiI6IjY4MTA5OTE4ZGRlNmUxODBmNjgxMWJhMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gmD1Iy9kO5zu87ka_cYmAiKL5tt5k-5hx44xo2qr-KE'
-    }
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTU1ZWU2YWI2YzFjOTE3NDUyM2U2NGUzOTNlOGI5NiIsIm5iZiI6MTc0NTkxODIzMi40NDQsInN1YiI6IjY4MTA5OTE4ZGRlNmUxODBmNjgxMWJhMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gmD1Iy9kO5zu87ka_cYmAiKL5tt5k-5hx44xo2qr-KE",
+  },
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/";
+
+export const LOGO =
+  "data:image/jpeg;base64,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";
+
+export const USER_AVATAR =
+  "https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdpkabKqQAxyWzo6QW_ZnPz1IZLqlmNfK-t4L1VIeV1DY00JhLo_LMVFp936keDxj-V5UELAVJrU--iUUY2MaDxQSSO-0qw.png?r=e6e";
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "spanish", name: "Spanish" },
+];
+
+export const BG_URL =
+  "https://assets.nflxext.com/ffe/siteui/vlv3/fc164b4b-f085-44ee-bb7f-ec7df8539eff/d23a1608-7d90-4da1-93d6-bae2fe60a69b/IN-en-20230814-popsignuptwoweeks-perspective_alpha_website_large.jpg";
+
+
+  export const OPENAI_KEY = "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";

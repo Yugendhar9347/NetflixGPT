@@ -4,8 +4,8 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import { auth } from "../utils/Firebase";
 import { useNavigate } from "react-router-dom";
+import { auth } from "../utils/firebase";
 
 function Body() {
 

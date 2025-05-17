@@ -1,49 +1,32 @@
-import { auth } from "../utils/Firebase";
+// import { auth } from "../utils/Firebase";
 import Header from "./Header";
-import { signOut } from "firebase/auth";
 import usegetMovieDetails from "../customHooks/usegetMovieDetails";
 import SecondaryContainer from "./SecondaryContainer";
 import MainContainer from "./MainContainer";
 import usePopularMovies from "../customHooks/usePopularMovies";
 import useTopRatedMovies from "../customHooks/useTopRatedMovies";
+import { useDispatch, useSelector } from "react-redux";
+import GptSearch from "./GptSearch";
 
 function Browse() {
-  const handleSignOut = () => {
-    signOut(auth)
-      .then(() => {
-        // Sign-out successful.
-        // navigate("/")
-      })
-      .catch((error) => {
-        // An error happened.
-        navigate("/error");
-      });
-  };
+  const dispatch = useDispatch();
+  const searchToggle = useSelector((store) => store.gptsearch.showgptSearch);
 
   usegetMovieDetails();
   usePopularMovies();
   useTopRatedMovies();
   return (
+
     <div>
-      <div className="flex justify-between ">
-        <div>
-          <Header />
-        </div>
-        <div>
-          <button
-            onClick={handleSignOut}
-            className="relative  bg-red-500 m-4 p-3 rounded-2xl"
-          >
-            Sign Out 
-          </button>
-        </div>
-      </div>
-
-
-      <div className="">
-      <MainContainer />
-      <SecondaryContainer />
-      </div>
+      <Header />
+      {searchToggle ? (
+        <GptSearch />
+      ) : (
+        <>
+          <MainContainer />
+          <SecondaryContainer />
+        </>
+      )}
     </div>
   );
 }
